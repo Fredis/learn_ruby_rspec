@@ -24,5 +24,5 @@ end
 
 def factorial(number) #Méthode pour calculer la factorielle d'un nombre
   return 1 if number == 1 || number == 0
-  return (number * factorial(number - 1))
+  (1..number).inject(:*)
 end
