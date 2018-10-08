@@ -1,4 +1,6 @@
 def wordtrans(word)
+  
+  capitalized = 1 if word[0] =~ /[A-Z]/ #vérifie si la première lettre est une majuscule alors on ajoute un 1 à la variable capitalized
   if word[0] =~ /[aeiuoy]/ #si le mot commence par une voyelle
     return word += "ay" #ajout de "ay" à la fin du mot
   else #si le mot commence par une consonne
@@ -12,7 +14,13 @@ def wordtrans(word)
       consonnes += word[consonnes.size] #la variable consonnes récupère toutes les lettres jusqu'à [Uu]
     end
     word.delete!(consonnes) #on supprime du mot le premier bout de consonnes et dans le cas où ça s'applique la suite "[Qq][Uu]".
-    return word + consonnes + "ay" #on met la variable consonnes à la fin du mot et on ajoute "ay".
+    word = word + consonnes + "ay" #on met la variable consonnes à la fin du mot et on ajoute "ay".
+    if capitalized == 1 #si le mot commencait par une majuscule
+      return word = word.capitalize #on tranforme la première lettre en majuscule
+    else 
+      return word
+    end
+
   end
 end
 
@@ -29,3 +37,4 @@ def translate(str)
   end
 end
 
+translate("The quick, Brown Fox")
