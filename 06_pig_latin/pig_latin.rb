@@ -1,5 +1,3 @@
-#write your code here
-
 def wordtrans(word)
   if word[0] =~ /[aeiuoy]/ #si commence par voyelle
     return word += "ay"
@@ -30,3 +28,8 @@ def translate(str)
     return wordtrans(str)
   end
 end
+
+
+  # Test-driving bonus:
+  # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
+  # * retain the punctuation from the original phrase

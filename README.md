@@ -1,3 +1,7 @@
+Exercices faits avec amour et beaucoup de concentration par Juliette Audema, Frédéric Stojicevic (FredS) et Axel Pélerin.
+Bisous.
+
+
 Test First Ruby -- RSpec 3 Edition
 ==========
 

@@ -1,12 +1,15 @@
-def add(first, second) #Méthode pour effectuer une addition
+#Méthode pour effectuer une addition
+def add(first, second)
 	return first + second
 end
 
-def subtract(first, second) #Méthode pour effectuer une soustraction
+#Méthode pour effectuer une soustraction
+def subtract(first, second) 
 	return first - second
 end
 
-def sum(array) #Méthode pour effectuer la somme des valeurs dans un array
+#Méthode pour effectuer la somme des valeurs dans un array
+def sum(array) 
 	result = 0.0
 	array.each do |number|
 		result = result + number
@@ -14,15 +17,18 @@ def sum(array) #Méthode pour effectuer la somme des valeurs dans un array
 	return result
 end
 
-def multiply (first, second) #Méthode pour effectuer une multiplication
+#Méthode pour effectuer une multiplication
+def multiply (first, second) 
 	return first * second
 end
 
-def power(first, second) #Méthode pour calculer la puissance d'un nombre sur la base du second
+#Méthode pour calculer la puissance d'un nombre sur la base du second
+def power(first, second) 
 	return first ** second
 end
 
-def factorial(number) #Méthode pour calculer la factorielle d'un nombre
+#Méthode pour calculer la factorielle d'un nombre
+def factorial(number) 
   return 1 if number == 1 || number == 0
   (1..number).inject(:*)
 end
